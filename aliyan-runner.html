@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliyan Lang Runner</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/responsive.css">
+    <link rel="stylesheet" href="src/styles/runner.css">
+</head>
+<body>
+    <div class="runner-container">
+        <header class="runner-header">
+            <a href="index.html" class="back-link">← Back to Portfolio</a>
+            <h1>Aliyan Lang Runner</h1>
+        </header>
+
+        <main class="runner-main">
+    <section class="editor-section">
+        <div class="editor-controls">
+            <h2>Code Editor</h2>
+            <div class="button-group">
+                <button id="runButton" class="run-button">Run Code</button>
+                <button id="clearButton" class="clear-button">Clear</button>
+            </div>
+        </div>
+        <div class="editor-wrapper">
+            <textarea id="codeEditor" class="code-editor" spellcheck="false"></textarea>
+            <pre id="highlightContainer" class="highlight-container"><code class="highlight-code"></code></pre>
+        </div>
+    </section>
+
+    <section class="output-section">
+        <div class="output-header">
+            <h2>Output</h2>
+            <button id="clearOutput" class="clear-output-btn">Clear Output</button>
+        </div>
+        <div id="output" class="output-pane"></div>
+    </section>
+</main>
+    </div>
+
+    <script src="src/js/runner.js"></script>
+</body>
+</html>
