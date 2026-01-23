@@ -20,6 +20,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
     color: var(--gold);
     line-height: 1.6;
     overflow-x: hidden;
+    min-width: 320px;
 }
 
 .page-wrapper {
@@ -42,7 +44,7 @@ body {
     background: var(--bg-dark);
     padding: 20px;
     overflow: hidden;
-
+    max-width: 100%;
 }
 
 .page-wrapper::before,
@@ -116,12 +118,13 @@ body {
 .nav-link {
     color: var(--gold);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: 400;
     letter-spacing: 0.1em;
     transition: color 0.3s, text-shadow 0.3s;
     position: relative;
     font-family: "Monoton", sans-serif;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -191,11 +194,12 @@ body {
     padding: 10px 40px;
     border: 6px solid var(--gold);
     background: rgba(15, 17, 23);
-    font-size: 3rem;
+    font-size: clamp(0.7rem, 4vw, 3rem);
     letter-spacing: 0.08em;
     font-weight: 400;
     max-width: 90vw;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+    word-wrap: break-word;
 }
 
 .content-grid {

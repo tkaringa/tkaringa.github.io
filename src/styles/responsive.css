@@ -1,85 +1,192 @@
+@media (max-width: 1200px) {
+    .page-wrapper {
+        margin: 8px;
+    }
 
-/* Tablet: 768px - 1024px */
+    .content-grid {
+        gap: 30px;
+    }
+
+    .projects-section,
+    .design-section {
+        padding: 40px 40px 50px;
+        max-width: 700px;
+    }
+
+    .about-container {
+        max-width: 900px;
+        padding: 50px 60px;
+    }
+}
+
 @media (max-width: 1024px) {
     .page-wrapper {
         margin: 5px;
         border-width: 3px;
+        padding: 15px;
     }
 
     .top-nav {
-        gap: 40px;
-        padding: 20px 15px;
+        gap: 30px;
+        padding: 15px 20px;
+        font-size: 0.9rem;
     }
 
     .nav-corner {
-        width: 100px;
-        height: 60px;
+        width: 80px;
+        height: 50px;
     }
 
     .nav-link {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        letter-spacing: 0.12em;
     }
 
     .sunburst-container {
-        width: 900px;
-        height: 300px;
+        width: 90%;
+        max-width: 800px;
+        height: 280px;
         margin: 0 auto 30px;
     }
 
     .title-box {
-        padding: 25px 60px;
-        font-size: 1.2rem;
+        padding: 25px 50px;
+        font-size: 1.15rem;
+        letter-spacing: 0.08em;
     }
 
     .content-grid {
         grid-template-columns: 1fr;
-        padding: 40px 30px;
-        gap: 30px;
+        padding: 30px 20px;
+        gap: 40px;
     }
 
     .vertical-divider-container {
         display: none;
     }
 
+    .projects-section,
+    .design-section {
+        padding: 40px 30px 50px;
+        max-width: 100%;
+    }
+
+    .projects-section::before,
+    .design-section::before {
+        inset: -20px;
+    }
+
     .section-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .cards-carousel {
+        transform: translateY(-15px);
     }
 
     .cards-grid {
-        gap: 20px;
+        gap: 18px;
+        padding: 10px 30px 20px;
+    }
+
+    .project-card {
+        min-width: 260px;
+        max-width: 260px;
+        height: 270px;
+        padding: 18px 16px;
+    }
+
+    .card-icon-container {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 12px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .card-description {
+        font-size: 11.5px;
+        margin: 6px 0;
+    }
+
+    .card-link {
+        font-size: 12px;
+    }
+
+    .about-section {
+        padding: 60px 30px;
+    }
+
+    .about-container {
+        max-width: 900px;
+        padding: 50px 50px;
+    }
+
+    .about-section .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .about-intro {
+        font-size: 1.05rem;
+        margin-bottom: 35px;
+    }
+
+    .about-details {
+        gap: 50px;
+    }
+
+    .about-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-list li {
+        font-size: 0.95rem;
+        padding: 11px 0;
     }
 
     .contact-section {
         grid-template-columns: 1fr;
-        padding: 40px 30px;
+        padding: 35px 25px;
         gap: 30px;
     }
 
     .lotus-container {
         flex-direction: row;
-        gap: 20px;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .lotus-asset {
+        width: 70px;
+        height: 70px;
     }
 
     .contact-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .contact-links a {
         font-size: 1rem;
+        padding: 10px 20px;
     }
 }
 
-/* Mobile: 480px - 767px */
 @media (max-width: 768px) {
     .page-wrapper {
         margin: 0;
         border-width: 2px;
-        min-height: auto;
+        padding: 10px;
     }
 
     .top-nav {
-        flex-direction: column;
-        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
         padding: 15px 10px;
     }
 
@@ -88,68 +195,175 @@
     }
 
     .nav-link {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         padding: 8px 15px;
         border: 2px solid var(--gold);
+        flex: 0 1 auto;
     }
 
     .hero {
-        padding: 40px 20px 60px;
+        padding: 30px 15px 50px;
     }
 
     .sunburst-container {
         width: 100%;
-        height: 250px;
-        margin: 0 0 30px;
+        height: 220px;
+        margin: 0 0 25px;
     }
 
     .title-box {
-        padding: 20px 30px;
-        font-size: 1rem;
+        padding: 20px 25px;
+        font-size: 0.95rem;
         letter-spacing: 0.06em;
+        max-width: 90%;
     }
 
     .content-grid {
-        padding: 30px 20px;
-        gap: 20px;
+        padding: 25px 15px;
+        gap: 35px;
+    }
+
+    .projects-section,
+    .design-section {
+        padding: 35px 20px 40px;
+    }
+
+    .projects-section::before,
+    .design-section::before {
+        inset: -15px;
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+        letter-spacing: 0.12em;
+    }
+
+    .cards-carousel {
+        transform: translateY(-10px);
+    }
+
+    .cards-carousel::before,
+    .cards-carousel::after {
+        width: 50px;
     }
 
     .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        padding: 10px 20px 15px;
+        scroll-padding: 20px;
     }
 
     .project-card {
-        padding: 20px 15px;
+        min-width: 240px;
+        max-width: 240px;
+        height: 260px;
+        padding: 16px 14px;
     }
 
     .card-icon-container {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 15px;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
     }
 
     .card-title {
         font-size: 0.85rem;
+        letter-spacing: 0.06em;
+        margin-bottom: 5px;
+    }
+
+    .card-description {
+        font-size: 11px;
+        margin: 5px 0;
+        line-height: 1.35;
+        -webkit-line-clamp: 3;
+    }
+
+    .card-link {
+        font-size: 11px;
+    }
+
+    .design-card .card-image-container {
+        height: 150px;
+        margin-bottom: 12px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+        margin: 30px 0 0;
+    }
+
+    .about-container {
+        padding: 40px 30px;
+    }
+
+    .about-container::before,
+    .about-container::after {
+        border-width: 2px;
+    }
+
+    .about-border-top,
+    .about-border-bottom {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .about-border-bottom {
+        margin-top: 30px;
+    }
+
+    .about-section .section-title {
+        font-size: 1.9rem;
+        margin-bottom: 35px;
+        letter-spacing: 0.15em;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+        margin-bottom: 30px;
+        line-height: 1.7;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-subtitle {
+        font-size: 1.15rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 18px;
+    }
+
+    .about-list li {
+        font-size: 0.9rem;
+        padding: 10px 0;
+        padding-left: 18px;
+    }
+
+    .about-list li:hover {
+        padding-left: 23px;
     }
 
     .contact-section {
-        padding: 30px 20px;
+        padding: 30px 20px 35px;
         gap: 25px;
     }
 
     .footer-corner {
-        width: 80px;
-        height: 50px;
+        width: 70px;
+        height: 45px;
     }
 
     .lotus-container {
-        flex-direction: row;
-        gap: 10px;
+        gap: 12px;
     }
 
     .lotus-asset {
@@ -162,86 +376,214 @@
     }
 
     .contact-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
+        letter-spacing: 0.12em;
     }
 
     .contact-links {
         gap: 12px;
+        flex-direction: column;
     }
 
     .contact-links a {
         font-size: 0.9rem;
+        padding: 10px 18px;
+        letter-spacing: 0.08em;
     }
 }
 
-/* Small Mobile: Below 480px */
 @media (max-width: 480px) {
     .page-wrapper {
         border-width: 2px;
         margin: 0;
+        padding: 8px;
+    }
+
+    .page-wrapper::before,
+    .page-wrapper::after {
+        inset: 4px;
+        border-width: 2px;
     }
 
     .top-nav {
         gap: 10px;
-        padding: 10px;
+        padding: 12px 8px;
     }
 
     .nav-link {
-        font-size: 0.8rem;
-        padding: 6px 10px;
+        font-size: 0.75rem;
+        padding: 7px 12px;
+        letter-spacing: 0.1em;
     }
 
     .hero {
-        padding: 30px 15px 40px;
+        padding: 25px 10px 35px;
     }
 
     .sunburst-container {
-        height: 200px;
+        height: 180px;
         margin: 0 0 20px;
     }
 
     .title-box {
         padding: 15px 20px;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         letter-spacing: 0.05em;
+        max-width: 95%;
     }
 
     .content-grid {
-        padding: 20px 15px;
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    .projects-section,
+    .design-section {
+        padding: 30px 15px 35px;
+    }
+
+    .projects-section::before,
+    .design-section::before {
+        inset: -12px;
     }
 
     .section-title {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-bottom: 25px;
+        letter-spacing: 0.1em;
+    }
+
+    .cards-carousel {
+        transform: translateY(-8px);
+    }
+
+    .cards-carousel::before,
+    .cards-carousel::after {
+        width: 40px;
     }
 
     .cards-grid {
-        grid-template-columns: 1fr;
         gap: 12px;
+        padding: 8px 15px 12px;
     }
 
     .project-card {
-        padding: 15px 10px;
+        min-width: 220px;
+        max-width: 220px;
+        height: 250px;
+        padding: 14px 12px;
+    }
+
+    .project-card::before {
+        inset: 8px;
     }
 
     .card-icon-container {
-        width: 70px;
-        height: 70px;
-        margin: 0 auto 12px;
+        width: 65px;
+        height: 65px;
+        margin-bottom: 8px;
     }
 
     .card-title {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        line-height: 1.25;
+        margin-bottom: 4px;
+    }
+
+    .card-description {
+        font-size: 10px;
+        margin: 4px 0;
+        line-height: 1.3;
+        -webkit-line-clamp: 2;
+    }
+
+    .card-link {
+        font-size: 10px;
+    }
+
+    .design-card .card-image-container {
+        height: 130px;
+        margin-bottom: 10px;
+        border-width: 1.5px;
+    }
+
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .about-section {
+        padding: 40px 15px;
+        margin: 25px 0 0;
+    }
+
+    .about-container {
+        padding: 30px 20px;
+    }
+
+    .about-border-top,
+    .about-border-bottom {
+        width: 80%;
+        height: 2px;
+        margin-bottom: 25px;
+    }
+
+    .about-border-bottom {
+        margin-top: 25px;
+    }
+
+    .about-section .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+        letter-spacing: 0.12em;
+    }
+
+    .about-intro {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .about-details {
+        gap: 30px;
+    }
+
+    .about-subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+    }
+
+    .about-list li {
+        font-size: 0.85rem;
+        padding: 9px 0;
+        padding-left: 16px;
+    }
+
+    .about-list li::before {
+        font-size: 0.6rem;
+    }
+
+    .about-list li:hover {
+        padding-left: 20px;
     }
 
     .contact-section {
-        padding: 20px 15px;
-        gap: 15px;
+        padding: 25px 15px 30px;
+        gap: 20px;
+    }
+
+    .footer-corner {
+        width: 60px;
+        height: 40px;
     }
 
     .lotus-container {
-        gap: 8px;
+        gap: 10px;
     }
 
     .lotus-asset {
@@ -250,12 +592,62 @@
     }
 
     .contact-title {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
+        font-size: 1.5rem;
+        margin-bottom: 18px;
+        letter-spacing: 0.1em;
+    }
+
+    .contact-links {
+        gap: 10px;
     }
 
     .contact-links a {
         font-size: 0.8rem;
+        padding: 9px 15px;
+        letter-spacing: 0.06em;
+    }
+}
+
+@media (max-width: 360px) {
+    .title-box {
+        font-size: 0.7rem;
+        padding: 12px 15px;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .project-card {
+        min-width: 200px;
+        max-width: 200px;
+        height: 240px;
+    }
+
+    .card-icon-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-title {
+        font-size: 0.75rem;
+    }
+
+    .about-section .section-title {
+        font-size: 1.4rem;
+    }
+
+    .about-intro {
+        font-size: 0.85rem;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
     }
 }
 
@@ -271,7 +663,14 @@
     }
 
     .nav-link:hover,
-    .contact-links a:hover {
+    .contact-links a:hover,
+    .project-card:hover,
+    .about-list li:hover {
+        transform: none;
         text-shadow: none;
+    }
+
+    .carousel-btn {
+        display: none;
     }
 }
